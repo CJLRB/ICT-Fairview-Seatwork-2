@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CAT Sign-In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+                body {
+            background: #0a1128;
+            color: #fff;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 7, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="text-center mb-4">CAT (Civilian Arms Training) Sign-In Forum</h3>
+        <form>
+            <div class="row mb-3">
+            <div class="col-md-6"> 
+                 <label for="inputUsername" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="inputUsername" placeholder="Enter your full name" required>
+            </div>
+              <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="dob" class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" id="dob" required>
+                </div>
+            </div> 
+                        <div class="mb-3">
+                <label for="training-level" class="form-label">Training Level</label>
+                <select id="training-level" class="form-select" required>
+                    <option value="" disabled selected>Select Training Level</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Preferred Training Topic</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Firearm Safety" id="firearm-safety">
+                    <label class="form-check-label" for="firearm-safety">Firearm Safety</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Aiming Techniques" id="aiming-techniques">
+                    <label class="form-check-label" for="aiming-techniques">Aiming Techniques</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Marksmanship" id="marksmanship">
+                    <label class="form-check-label" for="marksmanship">Marksmanship</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="statement" class="form-label">Statement of Interest</label>
+                <textarea class="form-control" id="statement" rows="4" placeholder="Please write a short statement of interest..." required></textarea>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
